@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebMvc.Data;
 
 namespace WebMvc.Migrations
 {
     [DbContext(typeof(WebMvcContext))]
-    partial class WebMvcContextModelSnapshot : ModelSnapshot
+    [Migration("20250120003045_addDepartmentForeignKey")]
+    partial class addDepartmentForeignKey
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
